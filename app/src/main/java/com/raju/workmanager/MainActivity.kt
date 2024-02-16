@@ -95,11 +95,11 @@ class MainActivity : ComponentActivity() {
                     PhotoCompressionWorker.KEY_COMPRESSION_THRESHOLD to 1024 * 20L
                 )
             )
-            .setConstraints(
-                Constraints(
-                    requiresStorageNotLow = true
-                )
-            )
+//            .setConstraints(
+//                Constraints(
+//                    requiresStorageNotLow = true
+//                )
+//            )
             .build()
         viewModel.updateWorkId(request.id)
         workManager.enqueue(request)
